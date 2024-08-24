@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Description</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            color: #2c3e50; /* Dark blue-grey for headings */
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .description, .details, .footer {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            color: #e74c3c; /* Bright red for highlights */
+            font-weight: bold;
+        }
+        .price {
+            color: #16a085; /* Green for price */
+            font-weight: bold;
+        }
+        .map {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .button {
+            background-color: #3498db; /* Blue button */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2-Bedroom Apartment on 160 Wooster Street, #4B, Manhattan, NY 10012</h1>
+
+        <p class="price"><strong>Price:</strong> $4300/month (utilities included)</p>
+
+        <div class="description">
+            <h2>Description:</h2>
+            <p>Welcome to your new home in the heart of SoHo! This stunning <span class="highlight">2-bedroom</span> apartment offers a blend of modern design and classic charm. With spacious rooms, high ceilings, and large windows, this apartment is filled with natural light and offers a comfortable living space.</p>
+        </div>
+
+        <div class="details">
+            <h2>Amenities:</h2>
+            <ul>
+                <li><strong>Modern Kitchen:</strong> Fully equipped with stainless steel appliances, including a refrigerator, dishwasher, microwave, and gas stove.</li>
+                <li><strong>Spacious Living Area:</strong> Open layout ideal for entertaining, featuring hardwood floors and ample light.</li>
+                <li><strong>Private Bedrooms:</strong> Two generously sized bedrooms with large closets for ample storage.</li>
+                <li><strong>In-Unit Laundry:</strong> Washer and dryer included for your convenience.</li>
+                <li><strong>Pet-Friendly:</strong> Cats and small dogs are welcome.</li>
+                <li><strong>Secure Building:</strong> Features a 24-hour doorman and security cameras for added safety.</li>
+                <li><strong>Elevator Access:</strong> Enjoy the convenience of an elevator in this well-maintained building.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <h2>Transportation & Neighborhood:</h2>
+            <p>Located in one of Manhattan's most vibrant neighborhoods, this apartment offers easy access to public transportation, shopping, dining, and entertainment:</p>
+            <ul>
+                <li><strong>Subway Access:</strong> Close to B, D, F, M, and 6 subway lines for quick travel throughout the city.</li>
+                <li><strong>Walking Distance:</strong> Steps away from world-class shopping, art galleries, and restaurants.</li>
+                <li><strong>Parks Nearby:</strong> Washington Square Park is just a short walk away, perfect for relaxing or enjoying outdoor activities.</li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.755166915407!2d-74.00296868469694!3d40.72510537932909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599421aa97f3%3A0x1ec6b5287d73a13f!2s160%20Wooster%20St%2C%20New%20York%2C%20NY%2010012%2C%20USA!5e0!3m2!1sen!2s!4v1692206747920!5m2!1sen!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <a href="https://form.jotform.com/stephendartley1/douglas-elliman-application-form" class="button">Schedule a Tour</a>
+    </div>
+
+    <script>
+        // You can add JavaScript here to enhance interactivity
+        // Example: Adding a smooth scroll to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
